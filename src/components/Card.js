@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const Div = styled.header`
+export const Div = styled.div`
     witdth: 100%;
     margin: 2rem;
     padding: 2rem;
@@ -10,7 +10,7 @@ const Div = styled.header`
 `;
 
 const Card = ({ className, children }) => (
-    <Div className={className} data-testid="card">
+    <Div className={className} data-testid="card" >
         {children}
     </Div>
 );

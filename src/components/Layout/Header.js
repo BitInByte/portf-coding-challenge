@@ -1,12 +1,13 @@
 import styled from 'styled-components';
-import Card from '../Card';
+import Card, {Div} from '../Card';
 import CardSection from '../CardSection';
 
-const HeaderEl = styled(Card).attrs({
-    // as: 'header'
+const HeaderEl = styled(Div).attrs({
+    as: 'header'
 })`
-    width: 100%;
+    // width: 100%;
 `;
+
 
 const Nav = styled.nav`
     width: 100%;
