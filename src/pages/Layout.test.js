@@ -1,8 +1,14 @@
 import '@testing-library/jest-dom';
 import { cleanup, render, screen } from '@testing-library/react';
+import { ThemeProvider } from 'styled-components';
 import Layout from './Layout';
+import theme from '../theme';
 
-const setup = () => render(<Layout />);
+const setup = () => render(
+    <ThemeProvider theme={theme}>
+        <Layout />
+    </ThemeProvider>
+);
 
 describe('<Layout />', () => {
 
@@ -11,7 +17,7 @@ describe('<Layout />', () => {
 
     afterEach(() => {
         cleanup();
-    })
+    });
 
     it('should contain a header element', () => {
         setup();

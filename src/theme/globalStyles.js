@@ -1,6 +1,8 @@
 import { createGlobalStyle } from 'styled-components';
 
 const globalStyles = createGlobalStyle`
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&display=swap');
+
   //     === RESETS === 
   *,
   *::after,
@@ -45,7 +47,7 @@ const globalStyles = createGlobalStyle`
   body {
     font-size: 1.6rem;
     box-sizing: border-box;
-    // font-family: 'Jura', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: normal;
     word-wrap: break-word;
     font-kerning: normal;
