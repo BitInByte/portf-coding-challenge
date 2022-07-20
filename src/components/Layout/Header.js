@@ -14,7 +14,6 @@ const Nav = styled.nav`
 `;
 
 const Input = styled.input`
-
 `;
 
 const Header = () => {
@@ -22,14 +21,20 @@ const Header = () => {
         <HeaderEl>
             <Nav>
                 <CardSection title="Date Filter">
-                    <p>Date Filter Here</p>
+                    <div>
+                        <input placeholder="Starting date..." type="date" data-testid="start-date" />
+                        -
+                        <input placeholder="Ending date..." type="date" data-testid="end-date" />
+                    </div>
                 </CardSection>
                 <CardSection title="Filter by ABV">
-                    <p>Date Filter Here</p>
+                    <div>
+                        <input placeholder="Insert a value..." data-testid="abv-filter" />
+                    </div>
                 </CardSection>
             </Nav>
         </HeaderEl>
     )
-}
+};
 
 export default Header;

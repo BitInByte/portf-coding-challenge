@@ -54,6 +54,14 @@ const globalStyles = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
+
+// === DESIGN ===
+    input {
+        margin: 1rem;
+        padding: 1rem;
+        border: 1px solid rgba(0, 0, 0, .2);
+        border-radius: 1rem;
+    }
 `;
 
 export default globalStyles;

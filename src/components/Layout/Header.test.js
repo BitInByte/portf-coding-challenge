@@ -23,4 +23,22 @@ describe('<Header />', () => {
         const nav = screen.getByRole('navigation');
         expect(nav).toBeInTheDocument();
     });
+
+    it('should contain start date input', () => {
+        setup();
+        const startDateInput = screen.getByTestId('start-date');
+        expect(startDateInput).toBeInTheDocument();
+    });
+
+    it('should contain end date input', () => {
+        setup();
+        const endDateInput = screen.getByTestId('end-date');
+        expect(endDateInput).toBeInTheDocument();
+    });
+
+    it('should contain ABV filter input', () => {
+        setup();
+        const abvFilterInput = screen.getByTestId('abv-filter');
+        expect(abvFilterInput).toBeInTheDocument();
+    });
 });
