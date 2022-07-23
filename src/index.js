@@ -6,6 +6,8 @@ import reportWebVitals from './reportWebVitals';
 import GlobalStyles from './theme/globalStyles';
 import theme from './theme';
 import { ThemeProvider } from 'styled-components';
+import 'react-date-range/dist/styles.css'; // main css file
+import 'react-date-range/dist/theme/default.css'; // theme css file
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

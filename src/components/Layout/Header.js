@@ -1,11 +1,12 @@
 import styled from 'styled-components';
-import Card, {Div} from '../Card';
+import Card, { Div } from '../Card';
 import CardSection from '../CardSection';
+import { useState } from 'react';
+import DateRangePicker from '../DateRangePicker';
 
 const HeaderEl = styled(Div).attrs({
     as: 'header'
 })`
-    // width: 100%;
 `;
 
 
@@ -27,6 +28,7 @@ const Header = () => {
                         -
                         <input placeholder="Ending date..." type="date" data-testid="end-date" />
                     </div>
+                    <DateRangePicker />
                 </CardSection>
                 <CardSection title="Filter by ABV">
                     <div>

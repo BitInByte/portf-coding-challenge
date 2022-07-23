@@ -1,20 +1,18 @@
 import styled from 'styled-components';
-import Card from '../Card';
+import { Div } from '../Card';
 import CardSection from '../CardSection';
 
-const MainEl = styled.main`
-    width: 100%;
+const MainEl = styled(Div).attrs({
+    as: 'main'
+})`
 `;
 
 const Main = () => {
     return (
         <MainEl>
-            <Card>
                 <CardSection title="Graph Result">
 
                 </CardSection>
-            </Card>
-
         </MainEl>
     )
 };
