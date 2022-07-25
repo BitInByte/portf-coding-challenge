@@ -8,15 +8,16 @@ import theme from './theme';
 import { ThemeProvider } from 'styled-components';
 import 'react-date-range/dist/styles.css'; // main css file
 import 'react-date-range/dist/theme/default.css'; // theme css file
+import 'rsuite/dist/rsuite.min.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <React.StrictMode>
-        <ThemeProvider theme={theme}>
-            <GlobalStyles />
-            <App />
-        </ThemeProvider>
-    </React.StrictMode>
+  <React.StrictMode>
+    <ThemeProvider theme={theme}>
+      <GlobalStyles />
+      <App />
+    </ThemeProvider>
+  </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
