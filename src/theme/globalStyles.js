@@ -41,7 +41,11 @@ const globalStyles = createGlobalStyle`
 //  ====== UNIVERSAL PROPERTIES ======
   html {
     font-size: 62.5%; // 1rem = 10px; 10px/16px = 62.5%
-  }
+
+    @media only screen and (max-width: 37.5em) {
+        font-size: 50%;
+    }
+    }
 
 
   body {
@@ -58,11 +62,22 @@ const globalStyles = createGlobalStyle`
 
 // === DESIGN ===
     input {
-        margin: 1rem;
+        //margin: 1rem;
         padding: 1rem;
         border: 1px solid rgba(0, 0, 0, .2);
         border-radius: 1rem;
     }
+
+h1 {
+font-size: 3.5rem;
+}
+h2 {
+font-size: 2.5rem;
+}
+
+h3 {
+font-size: 2.0rem;
+}
 `;
 
 export default globalStyles;

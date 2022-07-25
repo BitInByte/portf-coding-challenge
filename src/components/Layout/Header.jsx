@@ -10,6 +10,17 @@ const HeaderEl = styled(Div).attrs({
 const Nav = styled.nav`
   width: 100%;
   display: flex;
+
+  @media only screen and (max-width: 28.126em) {
+    flex-direction: column;
+  }
+`;
+
+const FilterEl = styled.div`
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 `;
 
 function Header() {
@@ -20,9 +31,13 @@ function Header() {
           <DateRangePicker />
         </CardSection>
         <CardSection title="Filter by ABV">
-          <div>
-            <input placeholder="Insert a value..." data-testid="abv-filter" />
-          </div>
+          <FilterEl>
+            <input
+              placeholder="Insert a value..."
+              data-testid="abv-filter"
+              type="number"
+            />
+          </FilterEl>
         </CardSection>
       </Nav>
     </HeaderEl>
