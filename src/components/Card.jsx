@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Div = styled.div`
+export const Div = styled.section`
   witdth: 100%;
   margin: 2rem;
   padding: 2rem;
